@@ -7,7 +7,7 @@ delayFn(2000).then(() => console.log("after 2 second"));
 console.log("after")
 
 function divide(a, b) {
-   return new Promise((resol, reject) => {
+   return new Promise((resolve, reject) => {
       if (b === 0) {
          reject("the number is zero")
       } else {

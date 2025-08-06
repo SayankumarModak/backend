@@ -24,14 +24,6 @@ console.log("new file addeed")
 
 
 
-
-
-
-
-
-
-
-
 // async way to do that ..to createfile
 const asyncFilePath = path.join(datafolder, "asyncfile.txt");
 fs.writeFile(asyncFilePath, "hello world", (err) => {

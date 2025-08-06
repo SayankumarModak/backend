@@ -24,7 +24,7 @@ app.get('/get', (req, res) => {
 app.get('/get/:id', (req, res) => {
    const book = books.find(book => book.id == req.params.id)
    if (book) {
-      return res.statu(200).json({
+      return res.status(200).json({
          book,
          message: "get the boooks easily"
       })
@@ -36,7 +36,7 @@ app.get('/get/:id', (req, res) => {
 })
 // add a new book
 app.post('/add', (req, res) => {
-   const newBook = {
+   const nwBook = {
       id: Math.floor(Math.random() * 1000).toString(),
       title: `Book ${Math.floor(Math.random() * 1000)}`,
    }
